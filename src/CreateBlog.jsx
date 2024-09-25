@@ -10,6 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import api from "./interceptor";
 
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import { getStorage } from 'firebase/storage';
 
 const CreateBlog=()=>{
     const [title, setTitle] = useState('Title  !');
