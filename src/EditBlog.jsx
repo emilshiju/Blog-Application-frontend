@@ -207,6 +207,25 @@ onChangeUploadImageToFirebase()
 
   }
 
+
+  const DeleteIcon=()=>{
+
+    api.post('/deleteBlog',{blogId})
+    .then((res)=>{
+    
+      if(res.data.status){
+        setFullDescription()
+        setTitle('Title  !')
+        setImage(false)
+        setFilePath(null)
+        toast.success('succesfuly deleted')
+
+      }
+    })
+
+
+  }
+
       
       useEffect(()=>{
 
@@ -404,17 +423,24 @@ onChangeUploadImageToFirebase()
 
 <div className="flex  justify-center">
 <button
-  o onClick={()=>onSubmitBlog(false)}
+   onClick={()=>onSubmitBlog(false)}
+
+  className="m-4 bg-blue-400 text-white  w-32 h-10 rounded-lg shadow-md"
+>
+  Draft
+</button>
+<button
+  onClick={DeleteIcon}
 
   className="m-4 bg-red-500 text-white  w-32 h-10 rounded-lg shadow-md"
 >
-  Draft
+  Delete
 </button>
 
 <button
   onClick={()=>onSubmitBlog(true)}
 
-  className="m-4 bg-blue-500 text-white  w-32 h-10 rounded-lg shadow-md"
+  className="m-4 bg-green-500 text-white  w-32 h-10 rounded-lg shadow-md"
 >
   Publish
 </button>

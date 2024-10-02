@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom';
 import {  toast } from 'react-toastify';
 
 const api=axios.create({
-    // baseURL:'http://localhost:3000/'
+    baseURL:'http://localhost:3000/'
     // https://sub.anonymous10.cloud/,
-     baseURL:'https://sub.anonymous10.cloud/'
+    //  baseURL:'https://sub.anonymous10.cloud/'
 })
 
 

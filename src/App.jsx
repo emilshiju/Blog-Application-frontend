@@ -146,7 +146,7 @@ const App=()=>{
 
 
 
-<div className="w-[800px]  ">
+<div className="w-[800px]  mb-40 ">
           {allBlogs&&allBlogs.map((a,b)=>{
             return (
            
@@ -170,7 +170,7 @@ const App=()=>{
 
               </div>:
               
-              <span className="text-sm">14 days ago</span>}
+              <span className="text-sm"> </span>}
             </div>7
             <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
               <p onClick={()=>navigateToSinglePage(a._id)} >{a.title}</p>
@@ -209,7 +209,7 @@ const App=()=>{
 
 
 
-
+{/* 
 
 
         <div className="w-[800px]  mt-3">
@@ -223,7 +223,7 @@ const App=()=>{
          </svg>
          Tutorial
        </span>
-       <span className="text-sm">14 days ago</span>
+      
      </div>
      <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
        <a href="#">How to quickly deploy a static website</a>
@@ -277,7 +277,10 @@ const App=()=>{
               </a>
             </div>
           </article>
-        </div>
+        </div> */}
+
+
+
 
 
     </div>

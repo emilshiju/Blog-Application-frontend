@@ -309,7 +309,7 @@ onChangeUploadImageToFirebase()
               {/* Modal header */}
               <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t ">
                 <h3 className="text-xl font-semibold text-gray-900 ">
-                  Terms of Service
+                  Descrption
                 </h3>
                 <button
                   type="button"
