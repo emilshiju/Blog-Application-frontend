@@ -78,7 +78,7 @@ const App=()=>{
           className="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300"
         >
           <span className="sr-only">Open user menu</span>
-          <img className="w-8 h-8 rounded-full" onClick={goToPorfile} src="/docs/images/people/profile-picture-3.jpg" alt="user photo" />
+          <img className="w-8 h-8 rounded-full" onClick={goToPorfile}  alt="user photo" />
         </button>
         <button  className='pl-10'>  <FaUserCog size={24}  onClick={goToUserDetails} /></button>
         <button className='pl-5' onClick={navigateToLogout}>
